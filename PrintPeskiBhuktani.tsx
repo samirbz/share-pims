@@ -207,8 +207,9 @@ const PeskiVuktaniPrint = async ({
 
       p {
         font-size: 0.9rem;
-        line-height: 1.5 ;
+        line-height: 1.5;
         margin: 4px 0;
+        text-indent: 40px;
       }
 
       .signature-block {
@@ -231,7 +232,6 @@ const PeskiVuktaniPrint = async ({
         justify-content: space-between;
         gap: 30px;
         align-items: flex-start;
-        margin-top: 10px;
       }
 
       .yogana-section h1,
@@ -269,7 +269,6 @@ const PeskiVuktaniPrint = async ({
         .signature-block {
           margin-top: 30px;
         }
-
       }
     </style>
   </head>
@@ -283,11 +282,11 @@ const PeskiVuktaniPrint = async ({
         <div class="title">
           <h3>सिद्धार्थनगर नगरपालिका</h3>
           <h3>नगर कार्यपलिकको कार्यालय</h3>
-          <p>सिद्धार्थनगर, रुपन्देही</p>
-          <p>लुम्बिनी प्रदेश नेपाल</p>
+          <h4 style="font-weight: normal">सिद्धार्थनगर, रुपन्देही</h4>
+          <h4 style="font-weight: normal">लुम्बिनी प्रदेश नेपाल</h4>
 
           <div class="info-bar">
-            <h3 style="margin-left:250px">(योजना शाखा)</h3>
+            <h3 style="margin-left: 250px">(योजना शाखा)</h3>
             <p>मिति:- २०८२/२/१०</p>
           </div>
 
@@ -296,94 +295,171 @@ const PeskiVuktaniPrint = async ({
       </div>
 
       <!-- Subject Section -->
-      <hr />
-      <h3 class="section-title">टिप्पणी र आदेश</h3>
-      <p>
-        <strong
-          >आ.व. २०८१/८२- सङ्घीय समानिकरण अनुदान, सङ्घीय समानिकरण अनुदान,</strong
-        >
-      </p>
-      <hr />
 
-      <p><strong>श्रीमान,</strong></p>
-      <p>
-        यस नगरपालिकाबाट स्वीकृत निम्न योजना / कार्यक्रम सञ्चालन गर्न नगरपालिका र
-        उपभोक्ता समिति बिच मिति २०८२ /१/२८ मा सम्झौता भए अनुसार श्रीरामपुर गाउँ
-        भित्र चौबैको घर देखि अगाडि पि.सी.सी. ढलान र श्रीरामपुर गाउँमा सडक ग्रेभल
-        उपभोक्ता समिति बाट पेश्की रकम माग भएको ।
-      </p>
-
-      <!-- योजनाको विवरण Section with right-side ULs -->
-      <div class="yogana-section">
-        <!-- Left side: योजनाको विवरण -->
-        <div style="flex: 2">
-          <h4 style="text-decoration: underline">योजनाको विवरण</h4>
-            <p>
-              योजनाको नाम:-
-              <strong
-                >श्रीरामपुर गाउँ भित्र चौबैको घर देखि अगाडि पि .सी.सी. ढलान र
-                श्रीरामपुर गाउँमा सडक ग्रेभल</strong
-              >
-            </p>
-            <p>निर्माण/मर्मत कार्य भएको स्थान:- रोहिणी गाउँपालिका- १</li>
-            <p>निर्णय मितिः- २०८१/४/१६</li>
-            <p>सम्झौता मितिः- २०८२/१/२८</li>
-            <p>कुल ल.ई रकम :- २१४,६१७.५५</li>
-            <p>विनियोजन रकम रु. २००,०००.००</li>
-            <p>जनसहभागिता रकम रु. २००,०००.००</li>
-            <p>कन्टेन्जेन्सी रकम रु. २००,०००.००</li>
-            <p>मर्मत सम्भार रकम रु. २००,०००.००</li>
-            <p>खुद पाउने रकम रु. २००,०००.००</li>
-            <p>आयोजना शुरु हुने मितिः- २०८२/१/२८</li>
-            <p>आयोजना सम्पन्न हुने मितिः- २०८२/३/१०</li>
-        </div>
-
-        <!-- Right side: लागत श्रोत + पेश्की भुक्तानी -->
-        <div style="flex: 1.5; margin-top: 110px">
-          <h5>लागत श्रोतको विवरण</h5>
-          <hr />
-
-          <p>सङ्घीय समानिकरण अनुदान:- २००,०००</p>
-          <p>सङ्घीय समानिकरण अनुदान:- २००,०००</p>
-          <hr />
-          <p>जम्मा रकम रुः- २१४,६१७</p>
-
-          <h5>पेश्की भुक्तानी हुने श्रोतको विवरण</h5>
-          <hr />
-          
-            <p>सङ्घीय समानिकरण अनुदान:- २००,०००</p>
-            <p>सङ्घीय समानिकरण अनुदान:- २००,०००</p>
-            <hr />
-            <p>जम्मा रकम रुः- २१४,६१७</p>
-       
-        </div>
+      <!-- <hr style="height: 2px; background-color: black; border: none" /> -->
+      <div style="border-top: 2px solid black; border-left: 2px solid black">
+        <h3 class="section-title">टिप्पणी र आदेश</h3>
+        <p style="margin-left: -32px; margin-bottom: 0">
+          <strong
+            >आ.व. २०८१/८२- सङ्घीय समानिकरण अनुदान, सङ्घीय समानिकरण
+            अनुदान,</strong
+          >
+        </p>
       </div>
-      <hr />
+      <div
+        style="
+          border-left: 2px solid black;
+          border-top: 2px solid black;
+          padding-left: 8px;
+        "
+      >
+        <h4 style="margin-top: 8px"><strong>श्रीमान,</strong></h4>
+        <p>
+          यस नगरपालिकाबाट स्वीकृत निम्न योजना / कार्यक्रम सञ्चालन गर्न नगरपालिका
+          र उपभोक्ता समिति बिच मिति २०८२ /१/२८ मा सम्झौता भए अनुसार श्रीरामपुर
+          गाउँ भित्र चौबैको घर देखि अगाडि पि.सी.सी. ढलान र श्रीरामपुर गाउँमा सडक
+          ग्रेभल उपभोक्ता समिति बाट पेश्की रकम माग भएको ।
+        </p>
 
-      <p>
-        उक्त योजना/कार्यक्रम सञ्चालनको लागि योजना कार्यक्रम सम्पन्न भए पछि
-        पेश्की रकम फरफारक गर्ने गरी हाल रु.१०,०००.०० (अक्षेरुपी :-
-        <strong>* दश हजार रूपैया मात्र ।</strong>) पेश्की रकम
-        <strong
-          >श्रीरामपुर गाउँ भित्र चौबैको घर देखि अगाडि पि.सी.सी. ढलान र
-          श्रीरामपुर गाउँमा सडक ग्रेभल उपभोक्ता समिति</strong
-        >
-        को नाम मा रहेको खाता मा उपलब्ध गराउन मनासिव देखि निर्णयार्थ पेश गरेको छु
-        ।
-      </p>
+        <!-- योजनाको विवरण Section with right-side ULs -->
+        <h4 style="text-decoration: underline">योजनाको विवरण</h4>
+        <p style="margin-bottom: 0px">
+          योजनाको नाम:-
+          <strong
+            >श्रीरामपुर गाउँ भित्र चौबैको घर देखि अगाडि पि .सी.सी. ढलान र
+            श्रीरामपुर गाउँमा सडक ग्रेभल</strong
+          >
+        </p>
+        <div class="yogana-section">
+          <!-- Left side: योजनाको विवरण -->
+          <div style="flex: 2">
+            <p>निर्माण/मर्मत कार्य भएको स्थान:- रोहिणी गाउँपालिका- १</p>
+            <p>निर्णय मितिः- २०८१/४/१६</p>
+            <p>सम्झौता मितिः- २०८२/१/२८</p>
+            <p>कुल ल.ई रकम :- २१४,६१७.५५</p>
+            <p>विनियोजन रकम रु. २००,०००.००</p>
+            <p>जनसहभागिता रकम रु. २००,०००.००</p>
+            <p>कन्टेन्जेन्सी रकम रु. २००,०००.००</p>
+            <p>मर्मत सम्भार रकम रु. २००,०००.००</p>
+            <p>खुद पाउने रकम रु. २००,०००.००</p>
+            <p>आयोजना शुरु हुने मितिः- २०८२/१/२८</p>
+            <p>आयोजना सम्पन्न हुने मितिः- २०८२/३/१०</p>
+          </div>
 
-      <!-- Signatures -->
-      <div class="signature-block">
-        <div class="signature">तयार गर्ने</div>
-        <div class="signature">पेश गर्ने</div>
-        <div class="signature">सदर गर्ने</div>
+          <!-- Right side: लागत श्रोत + पेश्की भुक्तानी -->
+          <div style="flex: 1.5; margin-top: 30px">
+            <h5>लागत श्रोतको विवरण</h5>
+            <hr />
+
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              सङ्घीय समानिकरण अनुदान:-
+              <span>२००,०००</span>
+            </p>
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              सङ्घीय समानिकरण अनुदान:-
+              <span>२००,०००</span>
+            </p>
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              सङ्घीय समानिकरण अनुदान:-
+              <span>२००,०००</span>
+            </p>
+            <hr />
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              जम्मा रकम रुः- <span>२१४,६१७</span>
+            </p>
+
+            <h5>पेश्की भुक्तानी हुने श्रोतको विवरण</h5>
+            <hr />
+
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              सङ्घीय समानिकरण अनुदान:-
+              <span>२००,०००</span>
+            </p>
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              सङ्घीय समानिकरण अनुदान:-
+              <span>२००,०००</span>
+            </p>
+            <hr />
+            <p
+              style="
+                margin-left: -40px;
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+              "
+            >
+              जम्मा रकम रुः- <span>२१४,६१७</span>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <p>पेश्की भुक्तानी रकम</p>
+        <hr />
+
+        <p>
+          उक्त योजना/कार्यक्रम सञ्चालनको लागि योजना कार्यक्रम सम्पन्न भए पछि
+          पेश्की रकम फरफारक गर्ने गरी हाल रु.१०,०००.०० (अक्षेरुपी :-
+          <strong>* दश हजार रूपैया मात्र ।</strong>) पेश्की रकम
+          <strong
+            >श्रीरामपुर गाउँ भित्र चौबैको घर देखि अगाडि पि.सी.सी. ढलान र
+            श्रीरामपुर गाउँमा सडक ग्रेभल उपभोक्ता समिति</strong
+          >
+          को नाम मा रहेको खाता मा उपलब्ध गराउन मनासिव देखि निर्णयार्थ पेश गरेको
+          छु ।
+        </p>
+
+        <!-- Signatures -->
+        <div class="signature-block">
+          <div class="signature">तयार गर्ने</div>
+          <div class="signature">पेश गर्ने</div>
+          <div class="signature">सदर गर्ने</div>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
-
-
 
   `
 
