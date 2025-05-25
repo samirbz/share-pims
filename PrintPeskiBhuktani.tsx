@@ -297,7 +297,7 @@ const PeskiVuktaniPrint = async ({
       <!-- Subject Section -->
 
       <!-- <hr style="height: 2px; background-color: black; border: none" /> -->
-      <div style="border-top: 2px solid black; border-left: 2px solid black">
+      <div style="border-top: 2px solid black; border-left: 2px solid black; ">
         <h3 class="section-title">टिप्पणी र आदेश</h3>
         <p style="margin-left: -32px; margin-bottom: 0">
           <strong
@@ -311,6 +311,7 @@ const PeskiVuktaniPrint = async ({
           border-left: 2px solid black;
           border-top: 2px solid black;
           padding-left: 8px;
+          padding-right: 8px;
         "
       >
         <h4 style="margin-top: 8px"><strong>श्रीमान,</strong></h4>
@@ -435,7 +436,7 @@ const PeskiVuktaniPrint = async ({
           </div>
         </div>
         <hr />
-        <p>पेश्की भुक्तानी रकम</p>
+        <p style="font-size: small">extra text goes here......</p>
         <hr />
 
         <p>
