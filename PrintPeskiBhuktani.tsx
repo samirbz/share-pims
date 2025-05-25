@@ -297,7 +297,7 @@ const PeskiVuktaniPrint = async ({
       <!-- Subject Section -->
 
       <!-- <hr style="height: 2px; background-color: black; border: none" /> -->
-      <div style="border-top: 2px solid black; border-left: 2px solid black; ">
+      <div style="border-top: 2px solid black; border-left: 2px solid black">
         <h3 class="section-title">टिप्पणी र आदेश</h3>
         <p style="margin-left: -32px; margin-bottom: 0">
           <strong
@@ -315,7 +315,7 @@ const PeskiVuktaniPrint = async ({
         "
       >
         <h4 style="margin-top: 8px"><strong>श्रीमान,</strong></h4>
-        <p>
+        <p style="width: 100%; text-align: justify">
           यस नगरपालिकाबाट स्वीकृत निम्न योजना / कार्यक्रम सञ्चालन गर्न नगरपालिका
           र उपभोक्ता समिति बिच मिति २०८२ /१/२८ मा सम्झौता भए अनुसार श्रीरामपुर
           गाउँ भित्र चौबैको घर देखि अगाडि पि.सी.सी. ढलान र श्रीरामपुर गाउँमा सडक
@@ -436,10 +436,14 @@ const PeskiVuktaniPrint = async ({
           </div>
         </div>
         <hr />
-        <p style="font-size: small">extra text goes here......</p>
+        <p style="font-size: small">
+          <strong>जम्मा पेश्की:- रु.१०,०००.००</strong>
+        </p>
+        <hr />
+        <p style="font-size: small">Extra text .....</p>
         <hr />
 
-        <p>
+        <p style="width: 100%; text-align: justify">
           उक्त योजना/कार्यक्रम सञ्चालनको लागि योजना कार्यक्रम सम्पन्न भए पछि
           पेश्की रकम फरफारक गर्ने गरी हाल रु.१०,०००.०० (अक्षेरुपी :-
           <strong>* दश हजार रूपैया मात्र ।</strong>) पेश्की रकम
@@ -461,6 +465,7 @@ const PeskiVuktaniPrint = async ({
     </div>
   </body>
 </html>
+
 
   `
 
