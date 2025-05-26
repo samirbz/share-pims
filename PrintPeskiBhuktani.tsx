@@ -287,7 +287,7 @@ const PeskiVuktaniPrint = async ({
 
           <div class="info-bar">
             <h3 style="margin-left: 250px">(योजना शाखा)</h3>
-            <p>मिति:- २०८२/२/१०</p>
+            <p>मिति:- ${miti}</p>
           </div>
 
           <div class="subject">विषय:- पेश्की रकम निकासा दिने बारे ।</div>
@@ -335,16 +335,20 @@ const PeskiVuktaniPrint = async ({
           <!-- Left side: योजनाको विवरण -->
           <div style="flex: 2">
             <p>निर्माण/मर्मत कार्य भएको स्थान:- रोहिणी गाउँपालिका- १</p>
-            <p>निर्णय मितिः- २०८१/४/१६</p>
-            <p>सम्झौता मितिः- २०८२/१/२८</p>
+            <p>निर्णय मितिः- ${nirnayaMiti}</p>
+            <p>सम्झौता मितिः- ${samjhautaMiti}</p>
             <p>कुल ल.ई रकम :- २१४,६१७.५५</p>
-            <p>विनियोजन रकम रु. २००,०००.००</p>
+            <p>विनियोजन रकम रु. ${biniyojitRakam}</p>
             <p>जनसहभागिता रकम रु. २००,०००.००</p>
-            <p>कन्टेन्जेन्सी रकम रु. २००,०००.००</p>
-            <p>मर्मत सम्भार रकम रु. २००,०००.००</p>
-            <p>खुद पाउने रकम रु. २००,०००.००</p>
+            <p>कन्टेन्जेन्सी रकम रु. ${contengencyRakam}</p>
+            <p>मर्मत सम्भार रकम रु. ${marmatSambharRakam}</p>
+            <p>खुद पाउने रकम रु. ${khudPauneRakam}</p>
             <p>आयोजना शुरु हुने मितिः- २०८२/१/२८</p>
             <p>आयोजना सम्पन्न हुने मितिः- २०८२/३/१०</p>
+            <p style="font-size: small">
+              <strong>जम्मा पेश्की:- रु.१०,०००.००</strong>
+            </p>
+            <p style="font-size: small">${anyaTipaniBivaran}</p>
           </div>
 
           <!-- Right side: लागत श्रोत + पेश्की भुक्तानी -->
@@ -436,12 +440,6 @@ const PeskiVuktaniPrint = async ({
           </div>
         </div>
         <hr />
-        <p style="font-size: small">
-          <strong>जम्मा पेश्की:- रु.१०,०००.००</strong>
-        </p>
-        <hr />
-        <p style="font-size: small">Extra text .....</p>
-        <hr />
 
         <p style="width: 100%; text-align: justify">
           उक्त योजना/कार्यक्रम सञ्चालनको लागि योजना कार्यक्रम सम्पन्न भए पछि
@@ -465,6 +463,7 @@ const PeskiVuktaniPrint = async ({
     </div>
   </body>
 </html>
+
 
 
   `
